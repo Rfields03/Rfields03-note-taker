@@ -41,7 +41,8 @@ module.exports = app => {
     });
 
     app.get('*', function(req, res) {
-      res.sendFile(path.join(_dirname, "/public/index.html"));
+      console.log('just to see it', path.join(__dirname, "../public/index.html"))
+      res.sendFile(path.join(__dirname, "../public/index.html"));
     });
 
     function updateDb() {
