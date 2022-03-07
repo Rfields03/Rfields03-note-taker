@@ -41,7 +41,6 @@ module.exports = app => {
     });
 
     app.get('*', function(req, res) {
-      console.log('just to see it', path.join(__dirname, "../public/index.html"))
       res.sendFile(path.join(__dirname, "../public/index.html"));
     });
 
