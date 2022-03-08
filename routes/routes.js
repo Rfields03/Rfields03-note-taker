@@ -7,26 +7,32 @@ module.exports = app => {
 
     if (err) throw err;
 
+    // Store the contents of the db.json file in a variable for better performance
     var notes = JSON.parse(data);
 
     // API ROUTES //
 
+    // Setup the /api/notes get route
     app.get("/api/notes", function(req, res) {
+      // Read the db.json file and return all saved notes as JSON.
       res.json(notes);
     });
 
-    app.post("/api/notes", function(req, res)
-    {
+    app.post("/api/notes", function(req, res) {
+      // Receives a new note, adds it to db.json, then returns the new note
       let newNote = req.body;
       notes.push(newNote);
       updateDb();
       return console.log("Added new note: "+newNote.title);
     });
 
+    // Retrieves a note with specific id
     app.get("/api/notes/:id", function(req, res) {
+      // display json for the notes array indices of the provided id
       res.json(notes[req.params.id]);
     });
 
+    // Deletes a note with specific id
     app.delete("/api/notes/:id", function(req, res)
     {
       notes.splice(req.params.id, 1);
@@ -37,7 +43,7 @@ module.exports = app => {
     // VIEW ROUTES //
 
     app.get('/notes', function(req, res) {
-      res.sendFile(path.join(__dirname, "/public/notes.html"));
+      res.sendFile(path.join(__dirname, "../public/notes.html"));
     });
 
     app.get('*', function(req, res) {
@@ -49,7 +55,9 @@ module.exports = app => {
         if(err) throw err;
         return true;
       });
+
     }
+
   });
 
 }

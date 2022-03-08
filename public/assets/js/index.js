@@ -23,9 +23,9 @@ var saveNote = function(note) {
 
 var deleteNote = function(id) {
   return $.ajax({
-    url: "api/notes/" + id,
+    url: "/api/notes/" + id,
     method: "DELETE"
-  })
+  });
 };
   
 var renderActiveNote = function() {
@@ -69,7 +69,7 @@ var handleNoteDelete = function(event) {
   deleteNote(note);
   getAndRenderNotes();
   renderActiveNote();
-  };
+};
 
 // Sets the activeNote and displays it
 var handleNoteView = function() {

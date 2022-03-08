@@ -1,23 +1,81 @@
 {
   "name": "note-taker",
   "version": "1.0.0",
-  "description": "an application called Note Taker that can be used to write and save notes. This application will use an Express.js back end and will save and retrieve note data from a JSON file",
+  "description": "An app for saving, viewing, and deleting notes.",
   "main": "server.js",
+  "dependencies": {
+    "bignumber.js": "^9.0.0",
+    "accepts": "^1.3.8",
+    "array-flatten": "^1.1.1",
+    "bytes": "^3.1.2",
+    "content-type": "^1.0.4",
+    "content-disposition": "^0.5.4",
+    "cookie": "^0.4.2",
+    "cookie-signature": "^1.0.6",
+    "body-parser": "^1.19.2",
+    "debug": "^2.6.9",
+    "depd": "^1.1.2",
+    "core-util-is": "^1.0.3",
+    "destroy": "^1.0.4",
+    "escape-html": "^1.0.3",
+    "ee-first": "^1.1.1",
+    "etag": "^1.8.1",
+    "express": "^4.17.3",
+    "finalhandler": "^1.1.2",
+    "forwarded": "^0.2.0",
+    "iconv-lite": "^0.4.24",
+    "fresh": "^0.5.2",
+    "inherits": "^2.0.4",
+    "http-errors": "^1.8.1",
+    "ipaddr.js": "^1.9.1",
+    "media-typer": "^0.3.0",
+    "methods": "^1.1.2",
+    "merge-descriptors": "^1.0.1",
+    "mime-db": "^1.51.0",
+    "mime-types": "^2.1.34",
+    "mime": "^1.6.0",
+    "mysql": "^2.18.1",
+    "negotiator": "^0.6.3",
+    "on-finished": "^2.3.0",
+    "ms": "^2.0.0",
+    "parseurl": "^1.3.3",
+    "process-nextick-args": "^2.0.1",
+    "path-to-regexp": "^0.1.7",
+    "proxy-addr": "^2.0.7",
+    "qs": "^6.9.7",
+    "range-parser": "^1.2.1",
+    "safe-buffer": "^5.2.1",
+    "readable-stream": "^2.3.7",
+    "safer-buffer": "^2.1.2",
+    "serve-static": "^1.14.2",
+    "send": "^0.17.2",
+    "sqlstring": "^2.3.1",
+    "setprototypeof": "^1.2.0",
+    "string_decoder": "^1.1.1",
+    "encodeurl": "^1.0.2",
+    "statuses": "^1.5.0",
+    "toidentifier": "^1.0.1",
+    "isarray": "^1.0.0",
+    "type-is": "^1.6.18",
+    "utils-merge": "^1.0.1",
+    "raw-body": "^2.4.3",
+    "unpipe": "^1.0.0",
+    "vary": "^1.1.2",
+    "util-deprecate": "^1.0.2"
+  },
+  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "\"echo \\\"Error: no test specified\\\" && exit 1\"",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Rfields03/note-taker.git"
+    "url": "git+https://github.com/Rfields03/Rfields03-note-taker.git"
   },
-  "author": "Robert S Field",
+  "author": "Robert Field",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Rfields03/note-taker/issues"
+    "url": "https://github.com/Rfields03/Rfields03-note-taker/issues"
   },
-  "homepage": "https://github.com/Rfields03/note-taker#readme",
-  "dependencies": {
-    "express": "^4.17.3",
-    "mysql": "^2.18.1"
-  }
+  "homepage": "https://github.com/Rfields03/Rfields03-note-taker#readme"
 }
