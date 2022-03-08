@@ -20,7 +20,7 @@ Open Terminal from code folder using the command prompt.
 Run `npm install` for all dependencies.  To use the application locally, run `node server.js` in your CLI, and then open [Local Web](http://localhost:3000/) or live on [Heroku](https://still-ridge-23907.herokuapp.com/public/notes.html) from your preferred browser.
 
 ## Preview
-![Application Preview - Replay at 720p for optimal viewing](Express.jsDemo.gif)
+![Application Preview - Replay at 720p for optimal viewing](express.js-demo.mp4)
 
 ## Deployed Link:
 [Note Taker App](https://still-ridge-23907.herokuapp.com/public/notes.html)
